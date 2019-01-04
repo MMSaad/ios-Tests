@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fonts_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkR-11-x4U">
+                                <rect key="frame" x="0.0" y="34" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="m3r-6g-p7N"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="98G-wB-s1t"/>
+                                </connections>
+                            </pickerView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-jD-6Kn">
+                                <rect key="frame" x="14" y="287" width="347" height="31"/>
+                                <connections>
+                                    <action selector="fontSizeSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M9a-YV-ZqJ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab3-Of-XjW">
+                                <rect key="frame" x="16" y="341" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ab3-Of-XjW" secondAttribute="trailing" constant="16" id="2a9-ro-MKZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzV-jD-6Kn" secondAttribute="trailing" constant="16" id="3cb-PT-6Dg"/>
+                            <constraint firstItem="bzV-jD-6Kn" firstAttribute="top" secondItem="DkR-11-x4U" secondAttribute="bottom" constant="37" id="SAk-dF-Kp5"/>
+                            <constraint firstItem="bzV-jD-6Kn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Snw-no-m8Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DkR-11-x4U" secondAttribute="trailing" id="WQQ-9d-qHc"/>
+                            <constraint firstItem="DkR-11-x4U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="amG-fQ-fYk"/>
+                            <constraint firstItem="DkR-11-x4U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="gQI-jz-fPo"/>
+                            <constraint firstItem="Ab3-Of-XjW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iiX-0h-OQH"/>
+                            <constraint firstItem="Ab3-Of-XjW" firstAttribute="top" secondItem="bzV-jD-6Kn" secondAttribute="bottom" constant="24" id="zTu-rp-7Iy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fontSizeSlider" destination="bzV-jD-6Kn" id="BNm-GW-eO2"/>
+                        <outlet property="fontsPicker" destination="DkR-11-x4U" id="eD0-qh-zg4"/>
+                        <outlet property="previewLabel" destination="Ab3-Of-XjW" id="KRe-0Y-7kc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
