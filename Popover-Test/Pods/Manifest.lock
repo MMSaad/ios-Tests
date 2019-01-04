@@ -1,0 +1,33 @@
+PODS:
+  - MaterialComponents/BottomSheet (73.0.0):
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/ShapeLibrary
+    - MaterialComponents/private/Shapes
+  - MaterialComponents/private/Application (73.0.0)
+  - MaterialComponents/private/KeyboardWatcher (73.0.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (73.0.0)
+  - MaterialComponents/private/ShapeLibrary (73.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+  - MaterialComponents/private/Shapes (73.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/ShadowElevations (73.0.0)
+  - MaterialComponents/ShadowLayer (73.0.0):
+    - MaterialComponents/ShadowElevations
+
+DEPENDENCIES:
+  - MaterialComponents/BottomSheet
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+
+SPEC CHECKSUMS:
+  MaterialComponents: 5ee94fadd206902ffa318ba5adfd3c9c8c799000
+
+PODFILE CHECKSUM: d66a9d2997af05f1acc4eef546a5f7cd89412002
+
+COCOAPODS: 1.5.3

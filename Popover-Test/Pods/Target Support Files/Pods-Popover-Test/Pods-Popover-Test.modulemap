@@ -1,0 +1,6 @@
+framework module Pods_Popover_Test {
+  umbrella header "Pods-Popover-Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
